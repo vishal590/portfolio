@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     '<h4>Newsfeed Dapp</h4><a target="_blank" href="https://grabdeals.axisbank.com" class="border-button">Check Online</a>',
     '<h4>Buy Me a Coffee</h4><a target="_blank" class = "border-button" href="https://www.elevatetrips.com/">Check Online</a>',
     '<h4>NFT Generator</h4><a target="_blank" href="https://www.easemytrip.com/" class="border-button">Check Online</a>',
+    '<a target="_blank" href="https://www.freecharge.in/" class="border-button">Check Online</a>'
   ];
 
   var worksPictures = [
@@ -44,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
     '<img src="./img/newImg/elevate.PNG"><img src="./img/newImg/elevate1.PNG"><img src="./img/newImg/elevate2.PNG">',
 
     '<img src="./img/newImg/ease.PNG"><img src="./img/newImg/axi1.PNG"><img src="./img/newImg/ease1.PNG">',
+
+    '<img src="./img/newImg/freecharge1.PNG"><img src="./img/newImg/freecharge2.PNG">',
+
   ];
 
   // Utils
