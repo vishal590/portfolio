@@ -1,358 +1,497 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of curious, a full-stack developer working with React, MUI, Tailwind CSS, Redux Toolkit, FastAPI, Node.js, microservices, PostgreSQL, MongoDB, Redis, Celery, and Docker.">
+  <title>curious | Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem("portfolio-theme");
+        var prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.setAttribute("data-theme", savedTheme || (prefersLight ? "light" : "dark"));
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
   </script>
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-  <style>
-    a.box.bg-1 {
-      transition: all .5s ease;
-      color: #fff;
-      border: 3px solid white;
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      line-height: 1;
-      font-size: 22px;
-      background-color: rgb(20 120 240 / 90%);
-      padding: 28px 45px;
-      outline: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-
-    a:hover.box.bg-1 {
-      color: rgb(30 162 245 / 90%);
-
-      border: 3px solid rgb(30 162 245 / 90%);
-    }
-  </style>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <div class="container">
-
-    <div class="sticky-logo-wrapper">
-      <nav class="row">
-        <div id="logo" class="clearfix">
-          <h1 id="logo-large-screens" class="logo-text">
-            <a href="/" title="PORTFOLIO">PORTFOLIO</a>
-          </h1>
-        </div>
-      </nav>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Go to top">
+      <span class="brand-mark">c</span>
+      <span>curious</span>
+    </a>
+    <div class="header-status" aria-label="Current focus">
+      <span></span>
+      Full-stack product engineering
     </div>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+      <span class="theme-toggle-icon" aria-hidden="true"></span>
+      <span class="theme-toggle-text">Light</span>
+    </button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="header" style="background-image: url('//cu7io.us/assets/images/scene.jpeg')">
-      <div class="header-inner-wrapper">
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Full-stack developer / React engineer</p>
+        <h1>Building fast React interfaces and reliable API-backed products.</h1>
+        <p class="hero-lede">
+          I am Vishal Bharat Lambe, a React.js and full-stack developer with 3+ years
+          of experience building scalable web apps, visual workflow tools, support
+          systems, and API-backed product interfaces.
+        </p>
+        <div class="hero-meta" aria-label="Portfolio highlights">
+          <span>Kolhapur, Maharashtra</span>
+          <span>React Flow ETL tools</span>
+          <span>FastAPI microservices</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View work</a>
+          <a class="button button-secondary" href="https://drive.google.com/file/d/1taT262Mp0aWk1V-8z2B9w7PlHovZ8NvA/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </div>
 
-        <div id="hero-title">
-          <div class="height-block">
-            <div class="logo-phone centered">
-              <h1><a href="/" title="PORTFOLIO">PORTFOLIO</a></h1>
-            </div>
-            <h1>
-              I am <span style="font-size: 3rem">
-                REACTJS DEVELOPER</span>
-              <br>
-              <!-- <span id="created-item-text">Dapp</span> -->
-            </h1>
+      <aside class="profile-panel" aria-label="Profile summary">
+        <img src="./img/my_img.jpg" alt="curious profile photo">
+        <div>
+          <h2>Vishal Lambe</h2>
+          <p>React-focused full-stack engineer based in Kolhapur, Maharashtra.</p>
+        </div>
+        <dl class="quick-facts">
+          <div>
+            <dt>Experience</dt>
+            <dd>3+ years</dd>
           </div>
+          <div>
+            <dt>Frontend</dt>
+            <dd>React, MUI, Tailwind CSS, Redux Toolkit</dd>
+          </div>
+          <div>
+            <dt>Backend</dt>
+            <dd>FastAPI, Express, Node.js, microservices</dd>
+          </div>
+          <div>
+            <dt>Data</dt>
+            <dd>PostgreSQL, MongoDB, Redis</dd>
+          </div>
+        </dl>
+        <div class="profile-code" aria-label="Current stack snapshot">
+          <span>const stack = {</span>
+          <span>  ui: "React + MUI + Tailwind",</span>
+          <span>  api: "FastAPI + Node + Celery",</span>
+          <span>  data: "PostgreSQL + MongoDB + Redis"</span>
+          <span>}</span>
         </div>
+      </aside>
+    </section>
 
-        <div id="go-down" class="go-down go-down-event">
-          <span></span>
-        </div>
-
+    <section class="section-shell ticker" aria-label="Core capabilities">
+      <div class="ticker-track">
+        <span>React</span>
+        <span>Redux Toolkit</span>
+        <span>FastAPI</span>
+        <span>Microservices</span>
+        <span>PostgreSQL</span>
+        <span>Redis</span>
+        <span>Docker</span>
+        <span>Product UI</span>
+        <span>React</span>
+        <span>Redux Toolkit</span>
+        <span>FastAPI</span>
+        <span>Microservices</span>
+        <span>PostgreSQL</span>
+        <span>Redis</span>
+        <span>Docker</span>
+        <span>Product UI</span>
       </div>
     </section>
 
-    <!-- Show standard footer -->
-
-
-    <section id="content">
-
-      <div class="row">
-        <div class="container auto-scrolling">
-          <div class="twelve columns">
-            <h2>
-              REACTJS DEVELOPER
-            </h2>
-            <div id="my-pics" class="image photo slides">
-              <ul>
-                <!-- slides -->
-                <li class="slide1"></li>
-                <li class="slide2"></li>
-                <li class="slide3"></li>
-                <li class="slide4"></li>
-              </ul>
-            </div>
-
-            <div>
-              <h2>My Github Contribution</h2>
-            </div>
-            <div style='display:flex;justify-content: center;align-items: center;width: 100%;margin-bottom: 80px;'>
-              <!-- Loading stuff -->
-              <img src="http://ghchart.rshah.org/vishal590" alt="2016rshah's Github chart" />
-            </div>
-
-            <div class="about-me-lines">
-              <div class="skills-line">
-                <figure>
-                  <img src="./img/react.png" alt="React.js and Redux.js" width="80">
-
-                  <figcaption>
-                    React.js &amp;big fan
-                  </figcaption>
-                </figure>
-
-                <figure>
-                  <img src="./img/javascript.png" alt="JavaScript" width="80">
-                  <figcaption>
-                    JavaScript
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="skills-line">
-                <figure>
-                  <img src="./img//mongodb.png" alt="Command Line" width="80">
-                  <figcaption>
-                    MongoDB
-                  </figcaption>
-                </figure>
-
-                <figure>
-                  <img src="./img/node-js.png" alt="Node.js and NPM" width="80">
-                  <figcaption>
-                    Node &amp; NPM allows me<br />to use JS on server
-                  </figcaption>
-                </figure>
-
-              </div>
-
-              <div class="skills-line">
-                <figure>
-                  <img width="80" src="./img/fasz.png" alt="Python">
-                  <figcaption>
-                    Python
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img src="./img/typescript.png" alt="Webpack" width="80">
-                  <figcaption>
-                    Build projects in <br />Typescript
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+    <section id="about" class="section-shell about-section">
+      <div class="section-heading">
+        <p class="eyebrow">01 / About</p>
+        <h2>I turn product requirements into clean frontend flows and practical backend APIs.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-copy">
+          <p>
+            I am a results-driven full-stack developer with strong React experience and
+            hands-on backend work in Python, FastAPI, microservices, PostgreSQL, Redis, Celery, Docker, and REST API design.
+            My recent work includes building visual ETL workflows with React Flow and
+            Redux Toolkit, support-desk products with React and FastAPI, and responsive
+            UI systems using MUI and Tailwind CSS.
+          </p>
+          <p>
+            I like working close to the product: understanding the flow, shaping the UI,
+            integrating APIs, and keeping the implementation maintainable as features grow.
+          </p>
+        </article>
+        <div class="about-stats" aria-label="Professional highlights">
+          <div>
+            <strong data-count="3" data-suffix="+">0</strong>
+            <span>Years building web applications</span>
+          </div>
+          <div>
+            <strong data-count="5">0</strong>
+            <span>Companies and product teams</span>
+          </div>
+          <div>
+            <strong>Full-stack</strong>
+            <span>React, MUI, Tailwind CSS, FastAPI, microservices, Node, SQL, MongoDB, Redis, Docker</span>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="line-divider"></div>
+    <section class="section-shell build-section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / What I build</p>
+        <h2>Product surfaces that need reliable state, clean UI, and backend integration.</h2>
+      </div>
+      <div class="build-grid">
+        <article>
+          <h3>Dashboards and admin tools</h3>
+          <p>Data-heavy interfaces, forms, tables, filters, permissions, and reusable MUI-based components.</p>
+        </article>
+        <article>
+          <h3>Workflow products</h3>
+          <p>Interactive builders and ETL-style visual flows using React Flow, Redux Toolkit, and API orchestration.</p>
+        </article>
+        <article>
+          <h3>API-backed web apps</h3>
+          <p>React frontends connected to FastAPI, Express, microservices, PostgreSQL, MongoDB, Redis, Celery, Axios, and REST APIs.</p>
+        </article>
+      </div>
+    </section>
 
-      <!-- Empty HTML for works showcase -->
-      <div id="works-container" class="shadow">
-        <div id="content-left" class="content-left row">
-          <!-- don't forget to add `single-element` class for a single content -->
-          <div id="img" class="ten columns centered"></div>
-        </div>
-
-        <div id="content-right" class="content-right">
-          <!-- close btn -->
-          <div id="closex"></div>
-          <!-- description block -->
-          <div id="cont"></div>
-          <!-- Content on Mobile View - same as content left ( don't forget the mobile-view class ) -->
-          <div class="ten columns centered mobile-view">
+    <section id="stack" class="section-shell stack-section">
+      <div class="section-heading">
+        <p class="eyebrow">03 / Tech stack</p>
+        <h2>Tools I use to build complete products</h2>
+      </div>
+      <div class="stack-grid">
+        <article class="stack-card">
+          <h3>Frontend</h3>
+          <div class="chip-list">
+            <span>React</span>
+            <span>MUI</span>
+            <span>Tailwind CSS</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>Redux Toolkit</span>
+            <span>React Flow</span>
+            <span>React Query</span>
+            <span>Context API</span>
           </div>
+        </article>
+        <article class="stack-card">
+          <h3>Backend</h3>
+          <div class="chip-list">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Express</span>
+            <span>Node.js</span>
+            <span>Microservices</span>
+            <span>Celery</span>
+            <span>REST APIs</span>
+            <span>Axios</span>
+          </div>
+        </article>
+        <article class="stack-card">
+          <h3>Data and platform</h3>
+          <div class="chip-list">
+            <span>PostgreSQL</span>
+            <span>MongoDB</span>
+            <span>Redis</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Git</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-shell experience-section">
+      <div class="section-heading">
+        <p class="eyebrow">04 / Experience</p>
+        <h2>Recent roles focused on React products, workflow tools, and full-stack delivery.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-role">
+            <span class="time-range">Apr 2025 - Present</span>
+            <h3>Senior Software Developer, Full Stack</h3>
+            <p class="company">Hyperminds Tech Pvt. Ltd., Pune</p>
+          </div>
+          <div class="timeline-detail">
+            <p>
+              Architected a full-featured ETL tool with React Flow, Redux Toolkit, and MUI.
+              Built Sigma Desk, a ticket-management system similar to Zoho Desk, across
+              React frontend and FastAPI backend. Designed microservice-friendly FastAPI and PostgreSQL APIs
+              integrated with AWS infrastructure for scalable data workflows.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-role">
+            <span class="time-range">Oct 2024 - Mar 2025</span>
+            <h3>React.js Developer</h3>
+            <p class="company">Innovative Web Solutions</p>
+          </div>
+          <div class="timeline-detail">
+            <p>
+              Built scalable interfaces for Closing Point and mortgage web apps using React
+              and Tailwind CSS. Used React Query and Context API to improve server-state and
+              application-state handling.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-role">
+            <span class="time-range">May 2024 - Oct 2024</span>
+            <h3>React.js Developer</h3>
+            <p class="company">Iam Careers Pvt. Ltd., Hyderabad</p>
+          </div>
+          <div class="timeline-detail">
+            <p>
+              Delivered responsive UIs for Devasmriti Marketsverse, Retired App, and Frissly
+              using React.js, Material UI, and CSS.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-role">
+            <span class="time-range">Jul 2022 - Feb 2023</span>
+            <h3>React.js Developer</h3>
+            <p class="company">RCS Tech LLP, Bangalore</p>
+          </div>
+          <div class="timeline-detail">
+            <p>
+              Developed ERP and asset-management modules for Zolo and Unacademy procurement
+              platforms using React.js.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-role">
+            <span class="time-range">Dec 2021 - Jul 2022</span>
+            <h3>React.js Developer, Frontend</h3>
+            <p class="company">Vervali Systems Pvt. Ltd., Mumbai</p>
+          </div>
+          <div class="timeline-detail">
+            <p>
+              Led frontend development for Elevate Trips hospitality web app, improving
+              booking flows with responsive React.js interfaces.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section-shell education-section">
+      <div class="section-heading">
+        <p class="eyebrow">05 / Education</p>
+        <h2>Academic background</h2>
+      </div>
+      <article class="education-card">
+        <div class="education-main">
+          <span class="time-range">2013 - 2017</span>
+          <h3>B.Sc Chemistry</h3>
+          <p class="company">Shivaji University, Maharashtra</p>
         </div>
+        <div class="education-detail">
+          <p>Full-time undergraduate degree.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="certifications" class="section-shell certifications-section">
+      <div class="section-heading">
+        <p class="eyebrow">06 / Certifications</p>
+        <h2>Verified learning across frontend, backend, and databases.</h2>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card">
+          <span class="cert-badge">01</span>
+          <div>
+            <h3>ReactJS Certificate</h3>
+            <p>HackerRank</p>
+          </div>
+          <a href="https://www.hackerrank.com/certificates/b01b45f36e46" target="_blank" rel="noreferrer">View certificate</a>
+        </article>
+        <article class="cert-card">
+          <span class="cert-badge">02</span>
+          <div>
+            <h3>JavaScript Intermediate Certificate</h3>
+            <p>HackerRank</p>
+          </div>
+          <a href="https://www.hackerrank.com/certificates/c72d0973b6af" target="_blank" rel="noreferrer">View certificate</a>
+        </article>
+        <article class="cert-card">
+          <span class="cert-badge">03</span>
+          <div>
+            <h3>Python Certificate</h3>
+            <p>HackerRank</p>
+          </div>
+          <a href="https://www.hackerrank.com/certificates/18a6338d0325" target="_blank" rel="noreferrer">View certificate</a>
+        </article>
+        <article class="cert-card">
+          <span class="cert-badge">04</span>
+          <div>
+            <h3>Node.js Certificate</h3>
+            <p>StudySection</p>
+          </div>
+          <a href="https://www.studysection.com/Badges/viewBadge/526122/auto" target="_blank" rel="noreferrer">View certificate</a>
+        </article>
+        <article class="cert-card">
+          <span class="cert-badge">05</span>
+          <div>
+            <h3>Go Certificate</h3>
+            <p>HackerRank</p>
+          </div>
+          <a href="https://www.hackerrank.com/certificates/ffe85c9c97d9" target="_blank" rel="noreferrer">View certificate</a>
+        </article>
+        <article class="cert-card">
+          <span class="cert-badge">06</span>
+          <div>
+            <h3>SQL Advanced Certificate</h3>
+            <p>HackerRank</p>
+          </div>
+          <a href="https://www.hackerrank.com/certificates/0a579b84000a" target="_blank" rel="noreferrer">View certificate</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">07 / Selected work</p>
+        <h2>Project experience across travel, fintech, and web platforms</h2>
       </div>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
-
-
-      <div class="row">
-        <div class="container">
-          <div id="portfolio" class="row">
-            <h2>My Work</h2>
-            <div class="portfolio-row row work-item">
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <a class="work-read-more" href="#">
-                    <img src="./img/newImg/axi.PNG" alt="SentiSum">
-                  </a>
-                </article>
-              </div>
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <h2>Axis Bank Grabdeals</h2>
-                  <ul>
-                    <li>HTML & CSS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>BOOTSTRAP</li>
-                    <a class="work-read-more" href="#">Read More »</a>
-                  </ul>
-                </article>
-              </div>
-            </div>
-            <div class="portfolio-row row  work-item">
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <h2>ELEVATETRIPS</h2>
-                  <ul>
-                    <li>HTML & CSS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>REACT JS</li>
-                    <li>Redux</li>
-                    <li>Typescript</li>
-                    <li>Tailwind Css</li>
-                    <a class="work-read-more" href="#">Read More »</a>
-                  </ul>
-                </article>
-              </div>
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <a class="work-read-more" href="#">
-                    <img src="./img/newImg/elevate.PNG" alt="SentiSum">
-                  </a>
-                </article>
-              </div>
-            </div>
-            <div class="portfolio-row row  work-item">
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <a class="work-read-more" href="#">
-                    <img src="./img/newImg/ease.PNG" alt="SentiSum">
-                  </a>
-                </article>
-              </div>
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <h2>EASE MY TRIP</h2>
-                  <ul>
-                    <li>HTML & CSS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>REACT JS</li>
-                    <li>Redux Toolkit</li>
-                    <li>Typescript</li>
-                    <a class="work-read-more" href="#">Read More »</a>
-                  </ul>
-                </article>
-              </div>
-            </div>
-            <div class="portfolio-row row  work-item">
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <h2>Freecharge</h2>
-                  <ul>
-                    <li>HTML & CSS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>REACT JS</li>
-                    <li>Bootstrap</li>
-                    <a class="work-read-more" href="#">Read More »</a>
-                  </ul>
-                </article>
-              </div>
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <a class="work-read-more" href="#">
-                    <img src="./img/newImg/freecharge2.PNG" alt="SentiSum">
-                  </a>
-                </article>
-              </div>
-            </div>
-            <div class="portfolio-row row  work-item">
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <a class="work-read-more" href="#">
-                    <img src="./img/newImg/dev.PNG" alt="SentiSum">
-                  </a>
-                </article>
-              </div>
-              <div class="six columns">
-                <article class="portfolio-card">
-                  <h2>Devasmriti Web App</h2>
-                  <ul>
-                    <li>HTML & CSS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>REACT JS</li>
-                    <li>Axios</li>
-                    <li>Material UI</li>
-                    <a class="work-read-more" href="#">Read More »</a>
-                  </ul>
-                </article>
-              </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <a class="project-image" href="https://grabdeals.axisbank.com" target="_blank" rel="noreferrer">
+            <img src="./img/newImg/axi.PNG" alt="Axis Bank Grabdeals screen">
+          </a>
+          <div class="project-body">
+            <span class="project-index">01</span>
+            <h3>Axis Bank Grabdeals</h3>
+            <p>Offer discovery and campaign UI work for a high-traffic banking deals platform.</p>
+            <div class="chip-list compact">
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>HTML/CSS</span>
             </div>
           </div>
+        </article>
 
-        </div>
-
-      </div>
-
-      <section style="padding: 80px 0;">
-
-        <div style="text-align: center;">
-
-          <a class="box bg-1" href="https://drive.google.com/file/d/1taT262Mp0aWk1V-8z2B9w7PlHovZ8NvA/view?usp=sharing"
-            target="_blank">Resume<a>
-
-
-        </div>
-      </section>
-
-      <div class="row">
-        <div class="container auto-scrolling">
-          <div class="twelve columns">
-            <div class="get-in-touch">
-              <h4>Get in touch with me</h4>
-            </div>
-            <div class="get-in-touch">
-              <a target="_blank" href="https://www.linkedin.com/in/vishal-l-189905162/">LinkedIn</a>
-              <a target="_blank" href="https://twitter.com/lambe_vishal">Twitter</a>
-              <a target="_blank" href="https://github.com/vishal590">GitHub</a>
-              <a target="_blank" href="https://leetcode.com/vishal238128/">Leetcode</a>
+        <article class="project-card">
+          <a class="project-image" href="https://www.elevatetrips.com/" target="_blank" rel="noreferrer">
+            <img src="./img/newImg/elevate.PNG" alt="Elevatetrips screen">
+          </a>
+          <div class="project-body">
+            <span class="project-index">02</span>
+            <h3>Elevatetrips</h3>
+            <p>Hospitality booking interfaces and responsive React screens for travel workflows.</p>
+            <div class="chip-list compact">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Redux</span>
+              <span>Tailwind</span>
             </div>
           </div>
-        </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-image" href="https://www.easemytrip.com/" target="_blank" rel="noreferrer">
+            <img src="./img/newImg/ease.PNG" alt="EaseMyTrip screen">
+          </a>
+          <div class="project-body">
+            <span class="project-index">03</span>
+            <h3>EaseMyTrip</h3>
+            <p>Booking-flow UI work with state handling, responsive layouts, and production constraints.</p>
+            <div class="chip-list compact">
+              <span>React</span>
+              <span>Redux Toolkit</span>
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-image" href="https://www.freecharge.in/" target="_blank" rel="noreferrer">
+            <img src="./img/newImg/freecharge2.PNG" alt="Freecharge screen">
+          </a>
+          <div class="project-body">
+            <span class="project-index">04</span>
+            <h3>Freecharge</h3>
+            <p>Fintech interface work focused on clear flows, reusable sections, and mobile behavior.</p>
+            <div class="chip-list compact">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <a class="project-image" href="https://devasmriti.marketsverse.com/" target="_blank" rel="noreferrer">
+            <img src="./img/newImg/dev.PNG" alt="Devasmriti web app screen">
+          </a>
+          <div class="project-body">
+            <span class="project-index">05</span>
+            <h3>Devasmriti Web App</h3>
+            <p>Responsive marketplace web app UI built with React, Material UI, API integration, and structured component patterns.</p>
+            <div class="chip-list compact">
+              <span>React</span>
+              <span>MUI</span>
+              <span>Axios</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
       </div>
+    </section>
 
-  </div>
+    <section id="contact" class="section-shell contact-section">
+      <div>
+        <p class="eyebrow">08 / Contact</p>
+        <h2>Open to React and full-stack product work.</h2>
+      </div>
+      <div class="contact-actions">
+        <a class="button button-primary" href="mailto:vishal238128@gmail.com">vishal238128@gmail.com</a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/vishal-l-189905162/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button button-secondary" href="https://github.com/vishal590" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="button button-secondary" href="https://leetcode.com/vishal238128/" target="_blank" rel="noreferrer">LeetCode</a>
+      </div>
+    </section>
+  </main>
 
-  </div>
-
-  </section>
-
-  <footer id="footer-sticky">
-    <div id="logo-footer">
-      <a href="#" id="go-up" class="go-up-event"></a>
-    </div>
-    <nav class="row">
-      <ul class="footer-navigation">
-        <li id="menu-about" class="menu-item go-down-event"><a href="#">About</a></li>
-        <li id="menu-home" class="menu-item go-up-event"><a href="#">Home</a></li>
-        <li class="menu-item"><a target="_blank" href="https://github.com/vishal590">GitHub</a></li>
-        <li class="menu-item"><a target="_blank" href="https://www.linkedin.com/in/vishal-l-189905162/">LinkedIn</a>
-        </li>
-      </ul>
-    </nav>
+  <footer class="footer">
+    <span>curious</span>
+    <span>React | MUI | Tailwind CSS | FastAPI | Node.js | Microservices | PostgreSQL | MongoDB | Redis | Celery | Docker</span>
   </footer>
+
   <script src="script.js"></script>
-  <script>
-    // new GitHubCalendar(".calendar", "vishal590", {responsive: true});
-
-    GitHubCalendar(".calendar", "vishal590", { responsive: true, tooltips: true }, {
-      proxy(username) {
-        return fetch(`https://proxyuser:proxypwd@proxy.server.com:8080/github?user=${username}`)
-      }
-    }).then(r => r.text())
-  </script>
-
 </body>
 
 </html>
