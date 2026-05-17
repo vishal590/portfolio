@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ".section-heading, .about-copy, .about-stats div, .build-grid article, .stack-card, .timeline-item, .education-card, .cert-card, .project-card, .contact-section"
   );
   var savedTheme = localStorage.getItem("portfolio-theme");
-  var prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
-  var initialTheme = savedTheme || (prefersLight ? "light" : "dark");
+  var initialTheme = savedTheme || "light";
 
   function applyTheme(theme) {
     var nextLabel = theme === "light" ? "Dark" : "Light";

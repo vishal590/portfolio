@@ -14,7 +14,7 @@
       try {
         var savedTheme = localStorage.getItem("portfolio-theme");
         var prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
-        document.documentElement.setAttribute("data-theme", savedTheme || (prefersLight ? "light" : "dark"));
+        document.documentElement.setAttribute("data-theme", savedTheme || "light");
       } catch (error) {
         document.documentElement.setAttribute("data-theme", "dark");
       }
@@ -53,7 +53,7 @@
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">Full-stack developer / React engineer</p>
+        <p class="eyebrow stamp-label">Full-stack developer / React engineer</p>
         <h1>Building fast React interfaces and reliable API-backed products.</h1>
         <p class="hero-lede">
           I am Vishal Bharat Lambe, a React.js and full-stack developer with 3+ years
@@ -64,6 +64,7 @@
           <span>Kolhapur, Maharashtra</span>
           <span>React Flow ETL tools</span>
           <span>FastAPI microservices</span>
+          <span>Developer dossier</span>
         </div>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">View work</a>
@@ -317,9 +318,6 @@
           <span class="time-range">2013 - 2017</span>
           <h3>B.Sc Chemistry</h3>
           <p class="company">Shivaji University, Maharashtra</p>
-        </div>
-        <div class="education-detail">
-          <p>Full-time undergraduate degree.</p>
         </div>
       </article>
     </section>
