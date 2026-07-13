@@ -34,11 +34,16 @@
       <span></span>
       Full-stack product engineering
     </div>
-    <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+    <button class="theme-toggle desktop-theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
       <span class="theme-toggle-icon" aria-hidden="true"></span>
       <span class="theme-toggle-text">Light</span>
     </button>
-    <nav class="nav-links" aria-label="Primary navigation">
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-navigation" class="nav-links" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#stack">Stack</a>
       <a href="#experience">Experience</a>
@@ -46,6 +51,10 @@
       <a href="#certifications">Certifications</a>
       <a href="#work">Work</a>
       <a href="#contact">Contact</a>
+      <button class="theme-toggle mobile-theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+        <span class="theme-toggle-text">Light</span>
+      </button>
     </nav>
   </header>
 
@@ -188,39 +197,113 @@
         <article class="stack-card">
           <h3>Frontend</h3>
           <div class="chip-list">
-            <span>React</span>
-            <span>MUI</span>
-            <span>Tailwind CSS</span>
-            <span>JavaScript</span>
-            <span>TypeScript</span>
+            <span>React.js</span>
             <span>Redux Toolkit</span>
+            <span>Redux Thunk</span>
             <span>React Flow</span>
             <span>React Query</span>
             <span>Context API</span>
+            <span>MUI</span>
+            <span>Tailwind CSS</span>
+            <span>Bootstrap</span>
           </div>
         </article>
+
         <article class="stack-card">
-          <h3>Backend</h3>
+          <h3>Backend and architecture</h3>
           <div class="chip-list">
             <span>Python</span>
             <span>FastAPI</span>
-            <span>Express</span>
+            <span>Flask</span>
             <span>Node.js</span>
-            <span>Microservices</span>
+            <span>Express.js</span>
+            <span>SQLAlchemy</span>
+            <span>Alembic</span>
             <span>Celery</span>
-            <span>REST APIs</span>
-            <span>Axios</span>
+            <span>REST API Design</span>
+            <span>Microservices</span>
+            <span>ETL Architecture</span>
+            <span>Distributed Systems</span>
+            <span>System Design</span>
+            <span>Async Processing</span>
+            <span>Data Consistency</span>
           </div>
         </article>
+
         <article class="stack-card">
-          <h3>Data and platform</h3>
+          <h3>AI and LLM</h3>
+          <div class="chip-list">
+            <span>LangChain</span>
+            <span>ReAct Agents</span>
+            <span>LangGraph</span>
+            <span>Flowise</span>
+            <span>OpenAI</span>
+            <span>Gemini</span>
+            <span>Hugging Face</span>
+            <span>AWS Bedrock</span>
+            <span>Qdrant</span>
+            <span>Elasticsearch RAG</span>
+            <span>Vector Search</span>
+            <span>Embeddings</span>
+            <span>Prompt Engineering</span>
+            <span>MCP</span>
+          </div>
+        </article>
+
+        <article class="stack-card">
+          <h3>Languages</h3>
+          <div class="chip-list">
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>Python</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>SQL</span>
+          </div>
+        </article>
+
+        <article class="stack-card">
+          <h3>Databases and messaging</h3>
           <div class="chip-list">
             <span>PostgreSQL</span>
             <span>MongoDB</span>
             <span>Redis</span>
-            <span>AWS</span>
+            <span>Elasticsearch</span>
+            <span>Kafka</span>
+          </div>
+        </article>
+
+        <article class="stack-card">
+          <h3>Cloud, DevOps and security</h3>
+          <div class="chip-list">
+            <span>AWS EC2</span>
+            <span>AWS S3</span>
+            <span>AWS Lambda</span>
+            <span>Boto3</span>
             <span>Docker</span>
             <span>Git</span>
+            <span>GitHub Actions</span>
+            <span>CI/CD</span>
+            <span>Axios</span>
+            <span>JWT</span>
+            <span>OAuth2</span>
+            <span>RBAC</span>
+            <span>SSE</span>
+            <span>Webhooks</span>
+          </div>
+        </article>
+
+        <article class="stack-card">
+          <h3>Testing and practices</h3>
+          <div class="chip-list">
+            <span>Jest</span>
+            <span>React Testing Library</span>
+            <span>PyTest</span>
+            <span>Postman</span>
+            <span>Swagger / OpenAPI</span>
+            <span>Agile</span>
+            <span>Responsive Web Design</span>
+            <span>Workflow Automation</span>
           </div>
         </article>
       </div>
@@ -234,7 +317,7 @@
       <div class="timeline">
         <article class="timeline-item">
           <div class="timeline-role">
-            <span class="time-range">Apr 2025 - Present</span>
+            <span class="time-range">Jan 2025 - Present</span>
             <h3>Senior Software Developer, Full Stack</h3>
             <p class="company">Hyperminds Tech Pvt. Ltd., Pune</p>
           </div>
@@ -244,20 +327,6 @@
               Built Sigma Desk, a ticket-management system similar to Zoho Desk, across
               React frontend and FastAPI backend. Designed microservice-friendly FastAPI and PostgreSQL APIs
               integrated with AWS infrastructure for scalable data workflows.
-            </p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-role">
-            <span class="time-range">Oct 2024 - Mar 2025</span>
-            <h3>React.js Developer</h3>
-            <p class="company">Innovative Web Solutions</p>
-          </div>
-          <div class="timeline-detail">
-            <p>
-              Built scalable interfaces for Closing Point and mortgage web apps using React
-              and Tailwind CSS. Used React Query and Context API to improve server-state and
-              application-state handling.
             </p>
           </div>
         </article>
@@ -326,13 +395,29 @@
         <article class="cert-card">
           <span class="cert-badge">01</span>
           <div>
+            <h3>Python Certification</h3>
+            <p>freeCodeCamp</p>
+          </div>
+          <a href="https://www.freecodecamp.org/certification/fccba62e1e0-9e7c-437f-aa27-131a2e624f3a/python-v9" target="_blank" rel="noreferrer">View certificate</a>
+        </article>
+        <article class="cert-card">
+          <span class="cert-badge">02</span>
+          <div>
+            <h3>Relational Database Certification</h3>
+            <p>freeCodeCamp</p>
+          </div>
+          <a href="https://www.freecodecamp.org/certification/fccba62e1e0-9e7c-437f-aa27-131a2e624f3a/relational-databases-v9" target="_blank" rel="noreferrer">View certificate</a>
+        </article>
+        <article class="cert-card">
+          <span class="cert-badge">03</span>
+          <div>
             <h3>ReactJS Certificate</h3>
             <p>HackerRank</p>
           </div>
           <a href="https://www.hackerrank.com/certificates/b01b45f36e46" target="_blank" rel="noreferrer">View certificate</a>
         </article>
         <article class="cert-card">
-          <span class="cert-badge">02</span>
+          <span class="cert-badge">04</span>
           <div>
             <h3>JavaScript Intermediate Certificate</h3>
             <p>HackerRank</p>
@@ -340,7 +425,7 @@
           <a href="https://www.hackerrank.com/certificates/c72d0973b6af" target="_blank" rel="noreferrer">View certificate</a>
         </article>
         <article class="cert-card">
-          <span class="cert-badge">03</span>
+          <span class="cert-badge">05</span>
           <div>
             <h3>Python Certificate</h3>
             <p>HackerRank</p>
@@ -348,7 +433,7 @@
           <a href="https://www.hackerrank.com/certificates/18a6338d0325" target="_blank" rel="noreferrer">View certificate</a>
         </article>
         <article class="cert-card">
-          <span class="cert-badge">04</span>
+          <span class="cert-badge">06</span>
           <div>
             <h3>Node.js Certificate</h3>
             <p>StudySection</p>
@@ -356,7 +441,7 @@
           <a href="https://www.studysection.com/Badges/viewBadge/526122/auto" target="_blank" rel="noreferrer">View certificate</a>
         </article>
         <article class="cert-card">
-          <span class="cert-badge">05</span>
+          <span class="cert-badge">07</span>
           <div>
             <h3>Go Certificate</h3>
             <p>HackerRank</p>
@@ -364,7 +449,7 @@
           <a href="https://www.hackerrank.com/certificates/ffe85c9c97d9" target="_blank" rel="noreferrer">View certificate</a>
         </article>
         <article class="cert-card">
-          <span class="cert-badge">06</span>
+          <span class="cert-badge">08</span>
           <div>
             <h3>SQL Advanced Certificate</h3>
             <p>HackerRank</p>
@@ -377,16 +462,54 @@
     <section id="work" class="section-shell">
       <div class="section-heading">
         <p class="eyebrow">07 / Selected work</p>
-        <h2>Project experience across travel, fintech, and web platforms</h2>
+        <h2>Recent company products and project experience across ETL, AI platforms, travel, fintech, and web applications</h2>
       </div>
 
       <div class="projects-grid">
+        <article class="project-card featured">
+          <a class="project-image project-image-placeholder" href="https://app.myskyshift.com/" target="_blank" rel="noreferrer" aria-label="Open SkyShift">
+            <span>SkyShift project image placeholder</span>
+          </a>
+          <div class="project-body">
+            <span class="project-index">01</span>
+            <h3>SkyShift</h3>
+            <p>Visual ETL and data-workflow platform built for creating, configuring, and managing scalable data pipelines across frontend, backend, and cloud infrastructure.</p>
+            <div class="chip-list compact">
+              <span>React</span>
+              <span>React Flow</span>
+              <span>Redux Toolkit</span>
+              <span>FastAPI</span>
+              <span>PostgreSQL</span>
+              <span>AWS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <a class="project-image project-image-placeholder" href="https://www.sigma.hyperminds.tech/" target="_blank" rel="noreferrer" aria-label="Open Sigma">
+            <span>Sigma project image placeholder</span>
+          </a>
+          <div class="project-body">
+            <span class="project-index">02</span>
+            <h3>Sigma</h3>
+            <p>AI-powered business platform combining CRM, HRMS, project management, helpdesk, and agentic AI modules in one integrated product.</p>
+            <div class="chip-list compact">
+              <span>React</span>
+              <span>MUI</span>
+              <span>FastAPI</span>
+              <span>PostgreSQL</span>
+              <span>Redis</span>
+              <span>AWS</span>
+            </div>
+          </div>
+        </article>
+
         <article class="project-card">
           <a class="project-image" href="https://grabdeals.axisbank.com" target="_blank" rel="noreferrer">
             <img src="./img/newImg/axi.PNG" alt="Axis Bank Grabdeals screen">
           </a>
           <div class="project-body">
-            <span class="project-index">01</span>
+            <span class="project-index">03</span>
             <h3>Axis Bank Grabdeals</h3>
             <p>Offer discovery and campaign UI work for a high-traffic banking deals platform.</p>
             <div class="chip-list compact">
@@ -402,7 +525,7 @@
             <img src="./img/newImg/elevate.PNG" alt="Elevatetrips screen">
           </a>
           <div class="project-body">
-            <span class="project-index">02</span>
+            <span class="project-index">04</span>
             <h3>Elevatetrips</h3>
             <p>Hospitality booking interfaces and responsive React screens for travel workflows.</p>
             <div class="chip-list compact">
@@ -419,7 +542,7 @@
             <img src="./img/newImg/ease.PNG" alt="EaseMyTrip screen">
           </a>
           <div class="project-body">
-            <span class="project-index">03</span>
+            <span class="project-index">05</span>
             <h3>EaseMyTrip</h3>
             <p>Booking-flow UI work with state handling, responsive layouts, and production constraints.</p>
             <div class="chip-list compact">
@@ -435,7 +558,7 @@
             <img src="./img/newImg/freecharge2.PNG" alt="Freecharge screen">
           </a>
           <div class="project-body">
-            <span class="project-index">04</span>
+            <span class="project-index">06</span>
             <h3>Freecharge</h3>
             <p>Fintech interface work focused on clear flows, reusable sections, and mobile behavior.</p>
             <div class="chip-list compact">
@@ -451,7 +574,7 @@
             <img src="./img/newImg/dev.PNG" alt="Devasmriti web app screen">
           </a>
           <div class="project-body">
-            <span class="project-index">05</span>
+            <span class="project-index">07</span>
             <h3>Devasmriti Web App</h3>
             <p>Responsive marketplace web app UI built with React, Material UI, API integration, and structured component patterns.</p>
             <div class="chip-list compact">
